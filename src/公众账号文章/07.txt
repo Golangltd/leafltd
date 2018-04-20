@@ -1,0 +1,92 @@
+>微信公众号：Golang语言社区
+如有问题或建议，请公众号留言或者微信群、QQ群提问
+
+
+<a id="footnote-4"></a>
+**本节完成以下知识点:**
+- [x] H5客户端处理Leaf返回消息处理(MongoDB暂时不接入)
+- [x] 讨论下后面我们以Leaf游戏框架+H5做什么游戏
+<a id="footnote-5"></a>
+***
+###上节回顾
+<a id="footnote-4"></a>
+**本节完成以下知识点:**
+- [x] leaf游戏服务器处理玩家登陆逻辑
+- [x] H5客户端实现（未解析数据BLOB）
+<a id="footnote-5"></a>
+***
+###H5客户端处理Leaf返回消息处理
+
+```
+		function onMessage(evt) {
+			console.log(evt);
+			var filrReader = new FileReader();
+			filrReader.onload = function() {
+				var arrayBuffer = this.result;
+				var decoder = new TextDecoder('utf-8')
+				var json = JSON.parse(decoder.decode(new DataView(arrayBuffer)));
+				console.log(json);
+			};
+			filrReader.readAsArrayBuffer(evt.data);
+		};
+```
+***
+Leaf服务器返回给H5的JSON消息结构
+文件位置：server\login\internal\handler.go
+```
+package internal
+
+import (
+	"reflect"
+	"server/msg/protocolfile"
+
+	"github.com/name5566/leaf/gate"
+	"github.com/name5566/leaf/log"
+)
+
+func handleMsg(m interface{}, h interface{}) {
+	skeleton.RegisterChanRPC(reflect.TypeOf(m), h)
+}
+
+func init() {
+	// 向当前模块（login 模块）注册 Protocol.UserLogin 消息的消息处理函数 handleTest
+	handleMsg(&Protocol.UserLogin{}, handleTest)
+}
+
+// 消息处理
+func handleTest(args []interface{}) {
+	// 收到的 Test 消息
+	m := args[0].(*Protocol.UserLogin)
+	// 消息的发送者
+	a := args[1].(gate.Agent)
+	// 1 查询数据库--判断用户是不是合法
+	// 2 如果数据库返回查询正确--保存到缓存或者内存
+
+	// 输出收到的消息的内容
+	log.Debug("Test login %v", m.LoginName)
+	log.Debug("---------", Protocol.UserLogin{
+		LoginName: "client",
+	})
+
+	dd := &Protocol.UserLogin{
+		LoginName: "client",
+		LoginPW:   "client",
+	}
+	//a.PlaySendMessage(dd)
+	a.WriteMsg(dd)
+}
+
+```
+***
+###测试结果
+
+11
+***
+###我们用leaf做什么游戏哪？
+大家可以直接QQ群或者微信群讨论，但是针对实例项目而言，主编还是建议使用H5来操作，简单明了。主编曾经用自己写的框架实践过一个H5实战游戏，访问网址：www.babaliuliu.com;这套GO后端框架会在后面开源出来。
+
+
+
+
+
+

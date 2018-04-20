@@ -1,0 +1,186 @@
+>微信公众号：Golang语言社区
+如有问题或建议，请公众号留言或者微信群、QQ群提问
+
+
+<a id="footnote-4"></a>
+**本节完成以下知识点:**
+- [x] 知识1，leaf游戏服务器处理玩家登陆逻辑
+- [x] 知识2，H5客户端实现
+<a id="footnote-5"></a>
+***
+###上节回顾
+上节课已经实现了消息的定义及消息的注册，将Leaf框架的结构做了部分功能文件的添加；更符合后面开发者快速熟悉的文件结构。
+***
+###leaf游戏服务器处理玩家登陆逻辑
+文件位置：
+server\login\internal\module.go
+注：此节不链接MongoDB
+
+module.go
+```
+package internal
+
+import (
+	"reflect"
+	"server/msg/protocolfile"
+
+	"github.com/name5566/leaf/gate"
+	"github.com/name5566/leaf/log"
+)
+
+func handleMsg(m interface{}, h interface{}) {
+	skeleton.RegisterChanRPC(reflect.TypeOf(m), h)
+}
+
+func init() {
+	// 向当前模块（login 模块）注册 Protocol.UserLogin 消息的消息处理函数 handleTest
+	handleMsg(&Protocol.UserLogin{}, handleTest)
+}
+
+// 消息处理
+func handleTest(args []interface{}) {
+	// 收到的 Test 消息
+	m := args[0].(*Protocol.UserLogin)
+	// 消息的发送者
+	a := args[1].(gate.Agent)
+	// 1 查询数据库--判断用户是不是合法
+	// 2 如果数据库返回查询正确--保存到缓存或者内存
+
+	// 输出收到的消息的内容
+	log.Debug("Test login %v", m.LoginName)
+
+	// 给发送者回应一个 Test 消息
+	a.WriteMsg(&Protocol.UserLogin{
+		LoginName: "client",
+	})
+}
+
+```
+***
+###H5客户端实现
+
+index.html:
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<h3 style="color: cornflowerblue;">Golang语言社区（www.Golang.Ltd）</h3> 发送数据: <input type='text' id='name' value="Leaf测试">
+		<input type="submit" onclick="login()" />
+	</body>
+	<script>
+		var wsUri = "ws://127.0.0.1:8889/?{'new':3}";
+
+		var json;
+
+		function login() {
+			var Data = {
+				LoginName: "Golang.Ltd",
+				LoginPW: "123456",
+			};
+			var json = {
+				UserLogin:Data
+			}
+			var goServerJson = JSON.stringify(json);
+			wsUri = wsUri;
+			console.log(wsUri);
+			doSend(goServerJson);
+		}
+
+		var output;
+		var websocket1;
+
+		function init() {
+			output = document.getElementById("output");
+			testWebSocket();
+		}
+
+		function testWebSocket() {
+			console.log(wsUri)
+			websocket1 = new WebSocket(wsUri);
+			websocket1.onopen = function(evt) {
+				onOpen(evt)
+			};
+			websocket1.onclose = function(evt) {
+				onClose(evt)
+			};
+			websocket1.onmessage = function(evt) {
+				onMessage(evt)
+			};
+			websocket1.onerror = function(evt) {
+				onError(evt)
+			};
+		}
+
+		function onOpen(evt) {
+			console.log("CONNECTED");
+		}
+
+		function onClose(evt) {
+			console.log("DISCONNECTED");
+		}
+
+		function onMessage(evt) {
+			var data = evt.data;
+			console.log("data=" + data);
+		}
+
+		function onError(evt) {
+			console.log(evt.data);
+			
+		}
+
+		function doSend(message) {
+			console.log(message);
+			websocket1.send(message);
+
+		}
+
+		window.addEventListener("load", init, false);
+	</script>
+
+</html>
+页面截图：
+
+简单说明下，H5的部分代码
+1 链接端口为什么是8889 ？
+原因是我们在leaf架构中配置的是8889
+文件位置：
+server\conf\server.json
+
+server.json
+```
+{
+    "LogLevel": "debug",
+    "LogPath": "",
+    "WSAddr": "127.0.0.1:8889",
+    "CertFile": "",
+    "KeyFile": "",
+    "TCPAddr": "127.0.0.1:8888",   
+    "MaxConnNum": 20000,
+    "ConsolePort": 8012,
+    "ProfilePath": ""
+}
+```
+***
+###H5测试链接Leaf服务器
+
+
+Leaf服务器接受到的测试结果：
+
+H5接收到Leaf服务器发回数据测试结果：
+
+本节就到这里，如果有疑问文章留言
+
+
+
+
+
+
+
+
+
