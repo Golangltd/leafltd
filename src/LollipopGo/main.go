@@ -1,27 +1,30 @@
 package main
 
 import (
+	"FenDZ/glog-master"
+	"FenDZ/go-concurrentMap-master"
 	"LollipopGo/conf"
 	"LollipopGo/game"
 	"LollipopGo/gate"
+	"LollipopGo/global"
 	"LollipopGo/login"
 	"flag"
 	_ "time"
 
-	_ "FenDZ/glog-master"
-
 	_ "github.com/dop251/goja" // JS 解析器
-
 	"github.com/name5566/leaf"
 	lconf "github.com/name5566/leaf/conf"
 )
 
 func init() {
+	glog.Info("Entry init")
 	// 初始化 日志系统
 	flag.Set("alsologtostderr", "true") // 日志写入文件的同时，输出到stderr
 	flag.Set("log_dir", "./log")        // 日志文件保存目录
 	flag.Set("v", "3")                  // 配置V输出的等级。
 	flag.Parse()
+	// 初始化并发安全map
+	global.M = concurrent.NewConcurrentMap()
 
 	return
 }

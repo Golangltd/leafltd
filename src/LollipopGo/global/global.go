@@ -6,15 +6,17 @@ import (
 
 var M *concurrent.ConcurrentMap // 并发安全的map
 
-//// 存储链接
-//func (this *OnlineUser) SaveConn(Conn *gate.Agent, Uid string) {
-
-//	// 保存在线的玩家的数据信息
-//	onlineUser := &OnlineUser{
-//		Connection: Conn, // 链接的数据信息
-//		StrMD5:     Uid,  // MD5数据
-//		MapSafe:    this.MapSafe,
-//	}
-//	// 赋值操作数据
-//	this.MapSafe.Put(Uid+"|connect", onlineUser)
-//}
+// 获取商家的OpenID信息
+func Get_MD5_Data(stropenid string) string {
+	// 判断数据库存在不
+	var StrMD5 = ""
+	// 差分key
+	strsplit := Strings_Split(stropenid, "|")
+	for i := 0; i < len(strsplit); i++ {
+		if i == 0 {
+		} else if i == 1 {
+			StrMD5 = strsplit[i]
+		}
+	}
+	return StrMD5
+}

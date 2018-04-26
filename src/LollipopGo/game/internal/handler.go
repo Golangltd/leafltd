@@ -24,11 +24,10 @@ func handler(m interface{}, h interface{}) {
 
 // 消息处理
 func handleTest(args []interface{}) {
-	// 收到的 Test 消息
-	//	m := args[0].(*Protocol.Test)
+
 	// 消息的发送者
 	a := args[1].(gate.Agent)
-
+	// 存储网络链接
 	onlineUser := &gate.OnlineUser{
 		Connection: a,        // 链接的数据信息== 广播的数据的信息，广播给用户的数据；所有的链接的数据的信息
 		MapSafe:    global.M, // 并发安全的map
@@ -52,16 +51,22 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 	m := args[0].(*Protocol.UserRegister)
 	// 输出收到的消息的内容
 	log.Debug("hello game %v", m.LoginName)
-
+	// 判断map里·有无
+	val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
+	if val == nil {
+		//--------------------------------------------------------------------------
+		// uid存储
+		onlineUser.StrMD5 = m.LoginName
+		// 解析并存储
+		// 赋值操作数据
+		onlineUser.MapSafe.Put(m.LoginName+"|connect", onlineUser)
+		//--------------------------------------------------------------------------
+	}
 	// 发送数据
 	onlineUser.Connection.WriteMsg(&Protocol.UserRegister{
 		LoginName: "client------------",
 	})
 
-	//	// 给发送者回应一个 Test 消息
-	//	a.WriteMsg(&Protocol.Test{
-	//		Name: "client",
-	//	})
-	// 高并发处理
-	// go this.SyncMessageFun(content)
+	//测试发送广播消息
+
 }
