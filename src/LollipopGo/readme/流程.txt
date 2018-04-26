@@ -17,10 +17,8 @@ func init() {
 	Processor.Register(&Protocol.UserRegister{})
 }
 
-
 2 路由设置
 F:\gocode\code\leafltd\src\LollipopGo\gate
-
 
 func init() {
 	msg.Processor.SetRouter(&Protocol.UserRegister{}, game.ChanRPC)
