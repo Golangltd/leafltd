@@ -68,9 +68,11 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 	})
 
 	//测试发送广播消息
-	val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
-	val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
-		LoginName: "++++++++++++++++client------------",
-	})
+	for i := 0; i < 10; i++ {
+		val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
+		val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
+			LoginName: "++++++++++++++++client------------",
+		})
+	}
 
 }
