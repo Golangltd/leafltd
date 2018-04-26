@@ -4,6 +4,7 @@ import (
 	"LollipopGo/msg/protocolfile"
 	"fmt"
 	"reflect"
+	"strings"
 
 	"FenDZ/glog-master"
 	"LollipopGo/global"
@@ -68,11 +69,44 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 	})
 
 	//测试发送广播消息
-	for i := 0; i < 10; i++ {
-		val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
-		val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
-			LoginName: "++++++++++++++++client------------",
-		})
-	}
+	//	for i := 0; i < 10; i++ {
+	//		val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
+	//		val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
+	//			LoginName: "++++++++++++++++client------------",
+	//		})
+	//	}
+	Broadcast_All_Player()
 
+}
+
+func Broadcast_All_Player() {
+	for itr := global.M.Iterator(); itr.HasNext(); {
+		k, v, _ := itr.Next()
+		strsplit := Strings_Split(k.(string), "|")
+		for i := 0; i < len(strsplit); i++ {
+			if len(strsplit) < 2 {
+				continue
+			}
+			var keyName = ""
+			switch v.(interface{}).(type) {
+			case *gate.OnlineUser:
+				{
+					if i == len(strsplit)-1 {
+						keyName = strsplit[i]
+					}
+					//if keyMD5 == v.(interface{}).(*OnlineUser).StrMD5 && keyName == "connect" {
+					if keyName == "connect" {
+						v.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
+							LoginName: "++++++++++++++++client------------",
+						})
+					}
+				}
+			}
+		}
+	}
+}
+
+// 字符串分割函数
+func Strings_Split(Data string, Split string) []string {
+	return strings.Split(Data, Split)
 }

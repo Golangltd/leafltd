@@ -26,3 +26,13 @@ func init() {
 	msg.Processor.SetRouter(&Protocol.UserRegister{}, game.ChanRPC)
 	msg.Processor.SetRouter(&Protocol.UserLogin{}, login.ChanRPC)
 }
+
+3 广播流程
+
+	//测试发送广播消息
+	//	for i := 0; i < 10; i++ {
+	//		val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
+	//		val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
+	//			LoginName: "++++++++++++++++client------------",
+	//		})
+	//	}
