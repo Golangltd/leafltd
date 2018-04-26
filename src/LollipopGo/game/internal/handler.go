@@ -52,21 +52,25 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 	// 输出收到的消息的内容
 	log.Debug("hello game %v", m.LoginName)
 	// 判断map里·有无
-	val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
-	if val == nil {
-		//--------------------------------------------------------------------------
-		// uid存储
-		onlineUser.StrMD5 = m.LoginName
-		// 解析并存储
-		// 赋值操作数据
-		onlineUser.MapSafe.Put(m.LoginName+"|connect", onlineUser)
-		//--------------------------------------------------------------------------
-	}
+
+	//if val == nil {
+	//--------------------------------------------------------------------------
+	// uid存储
+	onlineUser.StrMD5 = m.LoginName
+	// 解析并存储
+	// 赋值操作数据
+	onlineUser.MapSafe.Put(m.LoginName+"|connect", onlineUser)
+	//--------------------------------------------------------------------------
+	//}
 	// 发送数据
 	onlineUser.Connection.WriteMsg(&Protocol.UserRegister{
 		LoginName: "client------------",
 	})
 
 	//测试发送广播消息
+	val, _ := onlineUser.MapSafe.Get(m.LoginName + "|connect")
+	val.(interface{}).(*gate.OnlineUser).Connection.WriteMsg(&Protocol.UserRegister{
+		LoginName: "++++++++++++++++client------------",
+	})
 
 }
