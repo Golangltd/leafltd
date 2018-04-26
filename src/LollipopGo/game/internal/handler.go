@@ -48,9 +48,15 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 		}
 	}()
 	glog.Info("Entry PullFromClient")
+	// 获取数据
 	m := args[0].(*Protocol.UserRegister)
 	// 输出收到的消息的内容
 	log.Debug("hello game %v", m.LoginName)
+
+	// 发送数据
+	onlineUser.Connection.WriteMsg(&Protocol.UserRegister{
+		LoginName: "client------------",
+	})
 
 	//	// 给发送者回应一个 Test 消息
 	//	a.WriteMsg(&Protocol.Test{
@@ -58,5 +64,4 @@ func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 	//	})
 	// 高并发处理
 	// go this.SyncMessageFun(content)
-
 }
