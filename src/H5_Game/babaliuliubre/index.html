@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>WwW.BaBaLiuLiu.CoM</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+		<meta name="keywords" content="babaliuliu,8866,八八六六,babaliuliu游戏,babaliuliu.com,www.babaliuliu.com,H5实时对战游戏,h5实时对战游戏" , "h5互动游戏", "babaliuliu互动游戏"/>
+		<meta name="description" content="babaliuliu互动游戏，专业h5互动游戏平台，实现H5低延迟下多人实时对战，让大家畅游在游戏的航洋里。H5游戏在babaliuliu游戏平台必将洗心革面，给玩家不一样的体验！" />
+		<meta name="author" content="www.babaliuliu.com">
+		<meta name="robots" content="index,follow">
+		<meta name="application-name" content="BaBaLiuLiu.CoM">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<link rel="stylesheet" href="css/all.css" />
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript" src="js/gameAi.js"></script>
+		<script type="text/javascript" src="js/scoket.js"></script>
+		<script type="text/javascript" src="js/Item.js"></script>
+		<script type="text/javascript" src="js/luanma.js"></script>
+		<script type="text/javascript" src="js/InItAll.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/Snow.js"></script>
+		<script type="text/javascript" src="js/qrcode.js"></script>
+		<script type="text/javascript" src="js/Atuo_QRCode.js"></script>
+		<script type="text/javascript" src="js/yinxiao.js"></script>
+		<script type="text/javascript" src="js/tupianbase64.js"></script>
+		<script type="text/javascript" src="js/div_hp_pos.js"></script>
+		<script type="text/javascript" src="js/baidu.js" ></script>
+		<script type="text/javascript" src="js/requestNextAnimationFrame.js" ></script>
+		<script type="text/javascript" src="js/GameOver.js" ></script>
+		<!--<script type="text/javascript" src="js/all.js" ></script>-->
+	</head>
+
+	<body>
+		<div id="GGame">
+			<div id="Game-div" class="gameplayer">
+				<canvas class="Game-canvas-link" id="Game-canvas">
+        	浏览器不支持canvas
+           </canvas>
+
+			</div>
+			<div id="Item_Data" class="gameplayer">
+			</div>
+			<div id="BaBaLiuLiu-copyright" class="gameplayer">
+				&copy; 2018 WwW.BaBaLiuLiu.CoM -- QQ:1528884535
+			</div>
+			<div id="BaBaLiuLiu-EWM" class="gameplayer">
+				<!--<img src="img/RWM.jpg" height="120px" width="120px" />-->
+				<!--<img src= Auto_QRCode("http://www.baidu.com/") height="120px" width="120px" />-->
+			</div>
+			<div class="gameplayer">
+				<!--<p id="BaBaLiuLiu-CD1"><img src="img/runner-small.png" /> 宣传语一 </p>
+            	<p id="BaBaLiuLiu-CD2"><img src="img/runner-small.png" /> 宣传语二 </p>
+            	<p id="BaBaLiuLiu-CD3"><img src="img/runner-small.png" /> 宣传语三</p>-->
+			</div>
+			<div id="BaBaLiuLiu-Logo" class="gameplayer">
+				<!--<img src="img/logo.png" width="120px" height="120px" />-->
+				<img src="img/logogif.gif" width="120px" height="120px" />
+			</div>
+			<div id="Itme_1" class="gameplayer">
+				<p5>游戏</p5>
+				<img src="img/aniu.png" width="30px" height="30px" />
+				<p5>说明</p5>
+			</div>
+			<div id="DaoJuLan" class="Item_Hub">
+				<img src="img/cd.png" />
+				<div id="Itme_2" class="Item_Hub">
+					<img src="img/RWM.jpg" onclick="onclick_Item2()" width="100px" height="100px" />
+				</div>
+				<div id="Itme_3" class="Item_Hub"></div>
+				<div id="Itme_4" class="Item_Hub"></div>
+				<div id="Itme_5" class="Item_Hub"></div>
+			</div>
+			<div id= "GameOver">
+				<img src="img/huodong/GameOver.png"/>
+				<div id="jisuan1" >损失：1</div>
+				<div id="jisuan2" >损失：1</div>
+				<div id="jisuan3" >损失：1</div>
+				<div id="jisuan4" >损失：1</div>
+				<div id="jisuan5" onclick="GameOver_ReStart()">重新开始</div>
+				<div id="jisuan6" >耗时：1</div>
+			</div>
+			<div id="hp_boss"></div>
+			<div id="hp_player1">2000/2000</div>
+			<div id="hp_player2">2000/2000</div>
+			<div id="hp_player3">2000/2000</div>
+			<div id="hp_player4">2000/2000</div>
+		</div>
+
+		<audio src="img/yinxiao/爆炸02用.WAV" id="Boom_baozha">
+		</audio>
+		<audio src="img/yinxiao/飞行.WAV" id="feixing">
+		</audio>
+
+		<script>
+			ININ_ALL();
+		</script>
+
+	</body>
+
+</html>

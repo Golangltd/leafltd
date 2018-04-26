@@ -1,0 +1,145 @@
+/*body {
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	}*/
+
+html,
+body {
+	height: 100%;
+}
+
+
+/*@media only screen and (max-width: 960px) {
+html, body {
+font-size: 15px;
+}
+}
+@media only screen and (max-width: 800px) {
+html, body {
+font-size: 12.5px;
+}
+}
+@media only screen and (max-width: 720px) {
+html, body {
+font-size: 11.25px;
+}
+}
+@media only screen and (max-width: 640px) {
+html, body {
+font-size: 10px;
+}*/
+
+#Mobi {
+	margin: 0 auto;
+	width: device-width;
+	height: 100%;
+	position: relative;
+	border: 1px solid black;
+}
+
+#shoubing1 {
+	position: absolute;
+	border: 1px solid black;
+	top: 52%;
+	left: 50%;
+}
+
+#shoubing3 {
+	position: absolute;
+	border: 1px solid black;
+	top: 82%;
+	left: 50%;
+}
+
+#shoubing2 {
+	position: absolute;
+	border: 1px solid black;
+	top: 67%;
+	left: 59%;
+}
+
+#shoubing4 {
+	position: absolute;
+	border: 1px solid black;
+	top: 67%;
+	left: 38%;
+}
+
+
+/*小按钮*/
+
+#anniushoubing {
+	position: absolute;
+	/*border: 1px solid black;*/
+	top: 30%;
+	left: 60%;
+}
+
+
+/*大按钮*/
+
+#anniushoubing1 {
+	position: absolute;
+	/*border: 1px solid black;*/
+	top: 5%;
+	left: 50%;
+}
+
+#rongqi {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#Boom {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#role1 {
+	position: absolute;
+	left: 45%;
+	top: 10%;
+}
+
+#role2 {
+	position: absolute;
+	left: 45%;
+	top: 30%;
+}
+
+#role3 {
+	position: absolute;
+	left: 38%;
+	top: 50%;
+}
+
+#role4 {
+	position: absolute;
+	left: 38%;
+	top: 72%;
+}
+
+#logo {
+	position: absolute;
+	left: 5%;
+	top: 33%;
+}
+
+#ziti {
+	position: absolute;
+	left: 16%;
+	bottom: 55%;
+	transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	/* IE 9 */
+	-moz-transform: rotate(270deg);
+	/* Firefox */
+	-webkit-transform: rotate(270deg);
+	/* Safari 和 Chrome */
+}

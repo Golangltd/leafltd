@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>WwW.BaBaLiuLiu.CoM</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+		<meta name="keywords" content="babaliuliu,8866,八八六六,babaliuliu游戏,babaliuliu.com,www.babaliuliu.com,H5实时对战游戏,h5实时对战游戏">
+		<meta name="description" content="babaliuliu游戏，实现H5低延迟下多人实时对战，让大家畅游在游戏的航洋里。H5游戏在babaliuliu游戏平台必将洗心革面，给玩家不一样的体验！" />
+		<meta name="author" content="www.babaliuliu.com">
+		<meta name="robots" content="index,follow">
+		<meta name="application-name" content="BaBaLiuLiu.CoM">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<link rel="stylesheet" href="css/MobAll.css" />
+		<script type="text/javascript" src="js/babaliuliu.js"></script>
+		<script type="text/javascript" src="js/socket.js"></script>
+		<script type="text/javascript" src="js/luanma.js"></script>
+		<script type="text/javascript" src="js/baidu.js" ></script>
+		<script type="text/javascript">
+			var phoneWidth = parseInt(window.screen.width);
+			var phoneScale = phoneWidth / 640;
+			var ua = navigator.userAgent;
+			if(/Android (\d+\.\d+)/.test(ua)) {
+				var version = parseFloat(RegExp.$1);
+				if(version > 2.3) {
+					document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				} else {
+					document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+				}
+			} else {
+				document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<div id="Mobi" class="CMobi">
+			<dir id="rongqi">
+				<div id="shoubing1">
+					<img src="img/shoubing1.png" width="100px" height="100px" onclick="YouAnNiu()" />
+				</div>
+				<div id="shoubing2">
+					<img src="img/shoubing2.png" width="100px" height="100px" onclick="XiaAnNiu()" />
+				</div>
+				<div id="shoubing3">
+					<img src="img/shoubing3.png" width="100px" height="100px" onclick="ZuoAnNiu()" />
+
+				</div>
+				<div id="shoubing4">
+					<img src="img/shoubing4.png" width="100px" height="100px" onclick="ShangAnNiu()" />
+
+				</div>
+				<div id="anniushoubing">
+					<!--<font size="4" color="red">sss</font>-->
+					<img src="img/anniushoubing.png" width="140px" height="140px" onclick="XiaoAnNiu()" />
+				</div>
+				<div id="anniushoubing1">
+					<img src="img/anniushoubing.png" width="180px" height="180px" onclick="DaAnNiu()" />
+				</div>
+			</dir>
+
+			<div id="Boom">
+				<div id="role1">
+					<img src="img/role/unitair11base004.png" width="100px" height="100px" onclick="XuanZheRole1()" />
+				</div>
+				<div id="role2">
+					<img src="img/role/unitbmp2base004.png" width="100px" height="100px" onclick="XuanZheRole2()" />
+				</div>
+				<dir id="role3">
+					<img src="img/role/unitcannon3base004.png" width="100px" height="100px" onclick="XuanZheRole3()" />
+				</dir>
+				<dir id="role4">
+					<img src="img/role/unitair12base004.png" width="100px" height="100px" onclick="XuanZheRole4()" />
+				</dir>
+			</div>
+			<div id='logo'>
+				<img src="img/logo.png" width="200px" height="200px" />
+			</div>
+			<div id= "ziti">
+				<span style="font-size:18px;"> WwW.BaBaLiuLiu.CoM  </span>
+			</div>
+		</div>
+	</body>
+	<script>
+		init_socket();
+	</script>
+
+</html>
