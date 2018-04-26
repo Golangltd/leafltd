@@ -6,14 +6,15 @@ import (
 	"reflect"
 
 	"FenDZ/glog-master"
+	"LollipopGo/global"
 
 	"github.com/name5566/leaf/gate"
 	"github.com/name5566/leaf/log"
 )
 
 func init() {
-	// 向当前模块（game 模块）注册 Test 消息的消息处理函数 handleTest
-	handler(&Protocol.Test{}, handleTest)
+	// 向当前模块（game 模块）注册 UserRegister 消息的消息处理函数 handleTest
+	handler(&Protocol.UserRegister{}, handleTest)
 }
 
 // 异步处理
@@ -28,17 +29,17 @@ func handleTest(args []interface{}) {
 	// 消息的发送者
 	a := args[1].(gate.Agent)
 
-	onlineUser := &OnlineUser{
-		Connection: a, // 链接的数据信息== 广播的数据的信息，广播给用户的数据；所有的链接的数据的信息
-		MapSafe:    M, // 并发安全的map
+	onlineUser := &gate.OnlineUser{
+		Connection: a,        // 链接的数据信息== 广播的数据的信息，广播给用户的数据；所有的链接的数据的信息
+		MapSafe:    global.M, // 并发安全的map
 	}
 
-	onlineUser.PullFromClient(args)
+	PullFromClient(args, onlineUser)
 
 }
 
 // 数据分发处理
-func (this *OnlineUser) PullFromClient(args []interface{}) {
+func PullFromClient(args []interface{}, onlineUser *gate.OnlineUser) {
 
 	defer func() { // 必须要先声明defer，否则不能捕获到panic异常
 		if err := recover(); err != nil {
@@ -47,9 +48,9 @@ func (this *OnlineUser) PullFromClient(args []interface{}) {
 		}
 	}()
 	glog.Info("Entry PullFromClient")
-	m := args[0].(*Protocol.Test)
+	m := args[0].(*Protocol.UserRegister)
 	// 输出收到的消息的内容
-	log.Debug("hello game %v", m.Name)
+	log.Debug("hello game %v", m.LoginName)
 
 	//	// 给发送者回应一个 Test 消息
 	//	a.WriteMsg(&Protocol.Test{

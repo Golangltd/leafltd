@@ -12,4 +12,5 @@ import (
 
 func init() {
 	msg.Processor.SetRouter(&Protocol.UserLogin{}, login.ChanRPC)
+	//msg.Processor.SetRouter(&Protocol.UserRegister{}, game.ChanRPC)
 }
