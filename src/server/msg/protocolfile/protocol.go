@@ -1,5 +1,11 @@
 package Protocol
 
+// 一个结构体定义了一个 JSON 消息的格式
+// 消息名为 Test
+type Test struct {
+	Name string
+}
+
 // 用户登陆协议
 type UserLogin struct {
 	LoginName string // 用户名

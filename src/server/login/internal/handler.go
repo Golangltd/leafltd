@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"server/msg/protocolfile"
 
-	"server/gamedata"
+	_ "server/gamedata"
 
 	//	"github.com/go-redis/redis" // 内存数据库--用于测试
 	"github.com/name5566/leaf/gate"
@@ -42,5 +42,5 @@ func handleTest(args []interface{}) {
 	}
 	//a.PlaySendMessage(dd)
 	a.WriteMsg(dd)
-	gamedata.Init1()
+	//gamedata.Init1()
 }
