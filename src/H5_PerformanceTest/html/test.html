@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<h3 style="color: cornflowerblue;">宇樂遊戲，帳號系統！！！</h3>
+输入参与人数 <input type='text' id='name' value="">
+<input type="submit" onclick="login()" />
+<script src="../js/base32.js"></script>
+<script language="javascript" type="text/javascript">
+    var WSlist = [];
+    var Maplist ={};
+    var wsUri = "ws://www.xxxxx.club:端口/RuiLiDe?data={'Protocol':3,'Protocol2':1,'OpenID'='ww'}";
+
+    var goServerJson;
+    var json;
+    var renshu;
+    var yanchi;
+    function login() {
+        renshu = document.getElementById("name").value
+//        if(parseFloat(renshu)>250){
+//            alert('人数不能超过250')
+//        }else{
+           // if(parseFloat(renshu)<40){
+                yanchi=50
+
+//          }else{
+//              yanchi= (parseFloat(renshu)/40)*200+100;
+//            
+//
+//          }
+            init();
+//        }
+
+
+
+
+//        var json = {
+//            Protocol: 2,
+//            Protocol2: 34,
+//            OpenID:'hhgfhkfkgkhkkkjh|e049c18ff848103ed15c4d056e84bf7f',
+//            PC_Data:'admin001|天天向上|现场一'
+//        };
+//
+//        var goServerJson = JSON.stringify(json);
+//        wsUri = wsUri;
+//        console.log(wsUri);
+
+//        doSend();
+    }
+
+    //////////////////////////////////////////////////////////////////
+    var output;
+    var websocket1;
+
+    function init() {
+        output = document.getElementById("output");
+        var i;
+        for( i=0;i<renshu;i++){
+            testWebSocket();
+        }
+
+    }
+
+    function testWebSocket() {
+        console.log(wsUri)
+        websocket1 = new WebSocket(wsUri);
+        websocket1.onopen = function(evt) {
+            WSlist.push(websocket1)
+            onOpen(evt)
+        };
+        websocket1.onclose = function(evt) {
+            onClose(evt)
+        };
+        websocket1.onmessage = function(evt) {
+            onMessage(evt)
+        };
+        websocket1.onerror = function(evt) {
+            onError(evt)
+        };
+
+    }
+var m=0;
+    function onOpen(evt) {
+
+
+        m++;
+        console.log(m)
+        if(m==renshu){
+            doSend();
+        }
+        writeToScreen("CONNECTED"+m);
+    }
+
+    function onClose(evt) {
+        writeToScreen("DISCONNECTED");
+    }
+var flag =true,n=0,muNum=0;
+    function onMessage(evt) {
+        var data = evt.data;
+//        console.log("data=" + data);
+        var d = base64decode(data);
+        //console.log(d);
+        var zhuana = utf8to16(d);
+        var b = eval("(" + zhuana + ")");
+
+        appendToScreen('<span style="color: blue;">RESPONSE: ' + zhuana + '</span>');
+        //writeToScreen('<span style="color: blue;">RESPONSE: ' + base64encode(zhuana)+'</span>');
+
+        //websocket1.close();
+        if(b.Protocol==2&&b.Protocol2==1&&flag){
+console.log('延迟'+yanchi)
+               n++;
+               console.log(n)
+               flag =false;
+              var  timeout = setInterval(function () {
+                  muNum++
+                      if (muNum<101) {
+                          for(var key in Maplist){
+                              if(muNum==100){
+                                  console.log('----------------'+key)
+                              }
+                              var json = {
+                                  Protocol: 2,
+                                  Protocol2: 2,
+                                  OpenID:key,
+                                  YaoCiShu:muNum,
+                                  State:'admin001|奥运勇士|现场一'
+                              };
+                              console.log(muNum)
+                              var goServerJson = JSON.stringify(json);
+                              Maplist[key].send(goServerJson);
+                          }
+                      } else {
+                              clearInterval(timeout);
+                          }
+
+              },yanchi)
+//               for(var i=1;i<101;i++){
+//
+//                   for(var key in Maplist){
+//                       if(i==100){
+//                           console.log('----------------'+key)
+//                       }
+//                       var json = {
+//                           Protocol: 2,
+//                           Protocol2: 2,
+//                           OpenID:key,
+//                           YaoCiShu:i,
+//                           State:'admin001|天天向上|现场一'
+//                       };
+//                       console.log(i)
+//                       var goServerJson = JSON.stringify(json);
+//                       Maplist[key].send(goServerJson);
+//                   }
+//               }
+
+     }
+    }
+
+    function onError(evt) {
+        writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+    }
+
+    function doSend(message) {
+//        writeToScreen("SENT: " + message);
+//
+//        writeToScreen('<span style="color: blue;">RESPONSE: ' + base64encode(message) + '</span>');
+
+        for (var j=0;j<WSlist.length;j++){
+
+
+//            console.log(num)
+        var returnEncodeStr = getEncodeString(strUnicode2Ansi(j+1+''));
+//            console.log(returnEncodeStr)
+              var json = {
+                  Protocol: 2,
+                  Protocol2: 34,
+                  OpenID:returnEncodeStr+'hhgfhkfkgkhkkkjh|e049c18ff848103ed15c4d056e84bf7f',
+                  PC_Data:'admin001|奥运泳士|现场一'
+              };
+//          var json = {
+//              Protocol: 2,
+//              Protocol2: 34,
+//              OpenID:returnEncodeStr+'hhgfhkfkgkhkkkjh|2910822ea304a04b920227facf42aa4d',
+//              PC_Data:'admin001|天天向上|现场一'
+//          };
+//            console.log(json)
+            var goServerJson = JSON.stringify(json);
+            WSlist[j].send(goServerJson);
+            Maplist[json.OpenID]=WSlist[j]
+        }
+
+    }
+
+    function appendToScreen(message) {
+        var pre = document.createElement("p");
+        pre.style.wordWrap = "break-word";
+        pre.innerHTML = message;
+        output.appendChild(pre);
+    }
+    function writeToScreen(message) {
+
+        output.innerHTML = message;
+
+    }
+
+//    window.addEventListener("load", init, false);
+</script>
+<script src="../js/luanma.js"></script>
+
+<div id="output"></div>
+
+</body>
+</html>
