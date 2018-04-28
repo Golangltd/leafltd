@@ -34,3 +34,11 @@ func init() {
 	//			LoginName: "++++++++++++++++client------------",
 	//		})
 	//	}
+4 查看连接数
+	netstat -nat|grep -i "8036"|wc -l
+5 查看http连接数
+    ps -ef|grep httpd|wc -l
+6 查出哪个IP地址连接最多,将其封了.
+netstat -na|grep ESTABLISHED|awk {print $5}|awk -F: {print $1}|sort|uniq -c|sort -r +0n
+
+netstat -na|grep SYN|awk {print $5}|awk -F: {print $1}|sort|uniq -c|sort -r +0n

@@ -10,7 +10,7 @@ import (
 var db *sql.DB
 var err error
 
-func init() {
+func init1() {
 	StrConnection := "root" + ":" + "ruilide2016" + "@tcp(" + "127.0.0.1" + ":3306)/" + "gl_RuiliDe"
 	db, err = sql.Open("mysql", StrConnection)
 	checkError(err)
