@@ -6,5 +6,5 @@ import (
 
 var (
 	Module  = new(internal.Module)
-	ChanRPC = internal.ChanRPC
+	ChanRPC = internal.ChanRPC // 不同模块通信
 )
