@@ -6,13 +6,16 @@ import (
 	"sort"
 )
 
+// 提示消息
 var (
 	ErrComponentExists       = errors.New("component exists")
 	ErrComponentDoesNotExist = errors.New("component does not exist")
 )
 
+// 实体的ID信息
 type EntityID uint
 
+// 实体的接口数据
 type Entity interface {
 	AddComponent(cs ...Component) error
 	ReplaceComponent(cs ...Component)
@@ -42,12 +45,14 @@ const (
 
 type ComponentCallback func(Entity, Component)
 
+// 结构式负责联系再一起的数据
 type entity struct {
 	id         EntityID
 	components map[ComponentType]Component
 	callbacks  map[ComponentEvent][]ComponentCallback
 }
 
+// 申请一个实体
 func NewEntity(id int) Entity {
 	return &entity{
 		id:         EntityID(id),
@@ -56,17 +61,19 @@ func NewEntity(id int) Entity {
 	}
 }
 
+// 加入组件数据
 func (e *entity) AddComponent(cs ...Component) error {
 	for _, c := range cs {
 		if e.HasComponent(c.Type()) {
 			return ErrComponentExists
 		}
 		e.components[c.Type()] = c
-		e.callback(ComponentAdded, c)
+		e.callback(ComponentAdded, c) // 组合数据  component 组合到一起
 	}
 	return nil
 }
 
+// 替换 component
 func (e *entity) ReplaceComponent(cs ...Component) {
 	for _, c := range cs {
 		has := e.HasComponent(c.Type())
@@ -79,6 +86,7 @@ func (e *entity) ReplaceComponent(cs ...Component) {
 	}
 }
 
+// 移除component
 func (e *entity) WillRemoveComponent(ts ...ComponentType) error {
 	for _, t := range ts {
 		c, err := e.Component(t)

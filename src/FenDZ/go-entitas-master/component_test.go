@@ -8,7 +8,7 @@ import (
 )
 
 // Component index
-
+// 组件--也就相当于数据块
 const (
 	ComponentA ComponentType = iota
 	ComponentB
@@ -19,6 +19,7 @@ const (
 	NumComponents
 )
 
+// 数据快的解释
 // --- A ----------------------------------------------------------------------
 
 type componentA struct {
