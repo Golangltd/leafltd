@@ -2,6 +2,7 @@ package entitas
 
 // Component index
 // 组件--也就相当于数据块
+// 会根据类型经行操作
 const (
 	ComponentA ComponentType = iota
 	ComponentB

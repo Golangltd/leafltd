@@ -14,7 +14,7 @@ func init() {
 	c2 := entitas.NewComponentB(1.0)
 	// 组件的类型
 	types := []entitas.ComponentType{c1.Type(), c2.Type()}
-	fmt.Println(types)
+	fmt.Println(types[0])
 	// 加入组件
 	e.AddComponent(c1)
 	return
