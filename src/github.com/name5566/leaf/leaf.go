@@ -23,7 +23,7 @@ func Run(mods ...module.Module) {
 		defer logger.Close()
 	}
 
-	log.Release("Leaf %v starting up", version)
+	log.Release("Golang语言社区  LeafLtd %v starting up", version)
 
 	// module 模块
 	for i := 0; i < len(mods); i++ {

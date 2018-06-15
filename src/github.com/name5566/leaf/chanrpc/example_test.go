@@ -2,11 +2,14 @@ package chanrpc_test
 
 import (
 	"fmt"
-	"github.com/name5566/leaf/chanrpc"
 	"sync"
+
+	"github.com/name5566/leaf/chanrpc"
 )
 
+// server
 func Example() {
+
 	s := chanrpc.NewServer(10)
 
 	var wg sync.WaitGroup
@@ -40,6 +43,7 @@ func Example() {
 	}()
 
 	wg.Wait()
+
 	wg.Add(1)
 
 	// goroutine 2
