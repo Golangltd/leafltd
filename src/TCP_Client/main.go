@@ -21,15 +21,12 @@ func main() {
 
 	// len + data
 	m := make([]byte, 2+len(data))
-
 	// 默认使用大端序
 	binary.BigEndian.PutUint16(m, uint16(len(data)))
-
 	copy(m[2:], data)
 
 	// 发送消息
 	conn.Write(m)
-
 	if true {
 		data := []byte(`{
         "UserLogin": {
@@ -37,15 +34,11 @@ func main() {
 			"LoginPW" :"sss"
         }
     }`)
-
 		// len + data
 		m := make([]byte, 2+len(data))
-
 		// 默认使用大端序
 		binary.BigEndian.PutUint16(m, uint16(len(data)))
-
 		copy(m[2:], data)
-
 		// 发送消息
 		conn.Write(m)
 	}
