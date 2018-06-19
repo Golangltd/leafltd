@@ -1,10 +1,10 @@
 package msg
 
 import (
-	"LollipopGo/msg/protocolfile"
+"LollipopGo/msg/protocolfile"
 
-	"github.com/name5566/leaf/network"
-	"github.com/name5566/leaf/network/json"
+"github.com/name5566/leaf/network"
+"github.com/name5566/leaf/network/json"
 )
 
 var Processorbak network.Processor

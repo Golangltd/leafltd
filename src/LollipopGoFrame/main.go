@@ -1,13 +1,15 @@
 package main
 
-import "FenDZ/glog-master"
+import (
+	"FenDZ/glog-master"
+)
 
 func init()  {
 	return
 }
 
 func main()  {
-
-	glog.Info("test data!!!")
+	glog.Info("Fream Server data!!!")
 	return
 }
+

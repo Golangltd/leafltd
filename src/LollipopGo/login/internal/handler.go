@@ -38,9 +38,9 @@ func handleTest(args []interface{}) {
 
 	dd := &Protocol.UserLogin{
 		LoginName: "client",
-		LoginPW:   "client",
+		LoginPW:   "golang.ltd",
 	}
-	//a.PlaySendMessage(dd)
+	// a.PlaySendMessage(dd)
 	a.WriteMsg(dd)
 	//gamedata.Init1()
 }

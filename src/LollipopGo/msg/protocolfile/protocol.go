@@ -31,3 +31,5 @@ type UserST struct {
 	Coin     string // 金币
 	// 其他的暂时不做定义
 }
+
+// 选择角色的消息
