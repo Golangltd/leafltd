@@ -2,14 +2,23 @@ package main
 
 import (
 	"FenDZ/glog-master"
+	"LollipopGoFrame/Application"
+	"fmt"
 )
 
-func init()  {
-	return
-}
+var FPS  = 20
 
 func main()  {
 	glog.Info("Fream Server data!!!")
-	return
+	app:=xutil.GApp
+	app.SetFps(FPS).SetPidFile("hello").SetVersion(1,0,1)
+	if !app.Init(){
+		return
+	}
+	app.Run(Twst)
+	app.Distroy()
 }
 
+func Twst(i int64)  {
+   fmt.Println("---- 帧同步服务器 -----",i)
+}
