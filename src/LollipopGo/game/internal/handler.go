@@ -16,11 +16,16 @@ import (
 func init() {
 	// 向当前模块（game 模块）注册 UserRegister 消息的消息处理函数 handleTest
 	handler(&Protocol.UserRegister{}, handleTest)
+	handler(&Protocol.ChooseRole{}, handleChooseRole)
 }
 
 // 异步处理
 func handler(m interface{}, h interface{}) {
 	skeleton.RegisterChanRPC(reflect.TypeOf(m), h)
+}
+
+func handleChooseRole(args []interface{}) {
+   //
 }
 
 // 消息处理

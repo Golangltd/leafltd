@@ -82,7 +82,7 @@ mainLoop:
 			this.FeameTime = time.Duration(time.Now().UnixNano()-nowtime)
 			this.FeameTimeTotal+=this.FeameTime
 			if this.FeameTime >t && nowtime/int64(time.Millisecond)%1000<=50{
-				glog.Warning(" FPS 低于 50 ")
+				glog.Warning(" FPS 高于 50 ")
 			}
 			lasttime = nowtime
 			this.tickTotal++

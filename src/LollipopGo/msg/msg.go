@@ -16,4 +16,5 @@ var Processor = json.NewProcessor()
 func init() {
 	Processor.Register(&Protocol.UserLogin{})
 	Processor.Register(&Protocol.UserRegister{})
+	Processor.Register(&Protocol.ChooseRole{})
 }

@@ -33,3 +33,6 @@ type UserST struct {
 }
 
 // 选择角色的消息
+type ChooseRole struct {
+	RoleID uint32 // 1 2 3 4
+}
