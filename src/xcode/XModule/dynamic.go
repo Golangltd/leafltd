@@ -94,3 +94,39 @@ func (mgr *DModuleMgr) RunAll(delta int64) {
 		moduleRunOnce(m, delta)
 	}
 }
+
+// DModuleMetric ...
+type DModuleMetric struct {
+	ModuleTickTime time.Duration
+	TotalTickTime  time.Duration
+}
+
+// GetMetricData ...
+func (mgr *DModuleMgr) GetMetricData() map[string]*DModuleMetric {
+	metricData := make(map[string]*DModuleMetric)
+	for i := 0; i < len(*mgr); i++ {
+		m := &(*mgr)[i]
+		if m.module != nil {
+			oneData, ok := metricData[m.moduleName]
+			if !ok {
+				oneData = &DModuleMetric{
+					ModuleTickTime: m.tickUseTime,
+					TotalTickTime:  m.tickTimeTotal,
+				}
+				metricData[m.moduleName] = oneData
+			} else {
+				oneData.ModuleTickTime += m.tickUseTime
+				oneData.TotalTickTime += m.tickTimeTotal
+			}
+		}
+	}
+	return metricData
+}
+
+// TickUseTime ...
+func (mgr *DModuleMgr) TickUseTime(id int) time.Duration {
+	if id >= len(*mgr) {
+		return 0
+	}
+	return (*mgr)[id].tickUseTime
+}
