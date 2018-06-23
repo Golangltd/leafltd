@@ -1,4 +1,4 @@
-package gateway
+package main
 
 import (
 	"FenDZ/glog-master"
