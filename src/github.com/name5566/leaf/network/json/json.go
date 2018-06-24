@@ -9,6 +9,8 @@ import (
 	"reflect"
 )
 
+
+// datamanger
 type Processor struct {
 	msgInfo map[string]*MsgInfo
 }
@@ -69,6 +71,8 @@ func (p *Processor) SetRouter(msg interface{}, msgRouter *chanrpc.Server) {
 }
 
 // It's dangerous to call the method on routing or marshaling (unmarshaling)
+// ??????-----  函数  --===
+// 应用到哪里？？
 func (p *Processor) SetHandler(msg interface{}, msgHandler MsgHandler) {
 	msgType := reflect.TypeOf(msg)
 	if msgType == nil || msgType.Kind() != reflect.Ptr {

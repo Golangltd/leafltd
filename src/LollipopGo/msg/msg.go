@@ -3,14 +3,16 @@ package msg
 import (
 "LollipopGo/msg/protocolfile"
 
-"github.com/name5566/leaf/network"
 "github.com/name5566/leaf/network/json"
 )
 
-var Processorbak network.Processor
+//var Processorbak network.Processor
 
 // 使用默认的 JSON 消息处理器（默认还提供了 protobuf 消息处理器）
 var Processor = json.NewProcessor()
+
+// 默认还提供了 protobuf 消息处理器）
+// var Processorbuf = protobuf.NewProcessor()
 
 // 消息注册
 func init() {

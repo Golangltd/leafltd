@@ -32,7 +32,7 @@ func handleChooseRole(args []interface{}) {
 func handleTest(args []interface{}) {
 
 	// 消息的发送者
-	a := args[1].(gate.Agent)
+	a := args[1].(gate.Agent) // ??? ===
 	// 存储网络链接
 	onlineUser := &gate.OnlineUser{
 		Connection: a,        // 链接的数据信息== 广播的数据的信息，广播给用户的数据；所有的链接的数据的信息

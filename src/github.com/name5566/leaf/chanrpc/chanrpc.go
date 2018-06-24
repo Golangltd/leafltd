@@ -78,7 +78,7 @@ func (s *Server) Register(id interface{}, f interface{}) {
 		panic(fmt.Sprintf("function id %v: already registered", id))
 	}
 
-	s.functions[id] = f
+	s.functions[id] = f// 实现
 }
 
 func (s *Server) ret(ci *CallInfo, ri *RetInfo) (err error) {
