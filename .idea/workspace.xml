@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce955d84-496f-445b-8c1f-73e8bc2bed40" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LollipopGoFrame/Application/STdata.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/game.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/game.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/game/internal.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/game/internal.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/gate.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/gate.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/gate/internal.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/gate/internal.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/login.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/login.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/login/internal.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/login/internal.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGo/LollipopGo" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGo/LollipopGo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGo/LollipopGo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGo/LollipopGo.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGo/login/internal/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGo/login/internal/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGo/msg/msg.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGo/msg/msg.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGoFrame/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGoFrame/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGoTest/LollipopGoTest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGoTest/LollipopGoTest.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LollipopGoTest/tmian.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LollipopGoTest/tmian.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/msg.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/msg.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/msg/protocolfile.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/LollipopGo/msg/protocolfile.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/name5566/leaf/network/json.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/github.com/name5566/leaf/network/json.a" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,58 +19,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.682338">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/main.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="372">
-                  <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#14#53#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="STdata.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/Application/STdata.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="514">
-                  <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-                  <folding>
-                    <element signature="e#21#50#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="conf.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/conf/conf.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="496">
-                  <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="server.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/LollipopGo/conf/server.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PhysX.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/xcode/xPhysX/PhysX.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,12 +57,43 @@
         <option value="$PROJECT_DIR$/src/github.com/name5566/leaf/version.go" />
         <option value="$PROJECT_DIR$/src/LollipopGo/conf/json.go" />
         <option value="$PROJECT_DIR$/src/TCP_Client/main.go" />
-        <option value="$PROJECT_DIR$/src/LollipopGo/msg/msg.go" />
         <option value="$PROJECT_DIR$/src/LollipopGo/gate/router.go" />
-        <option value="$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go" />
         <option value="$PROJECT_DIR$/src/LollipopGo/login/internal/handler.go" />
-        <option value="$PROJECT_DIR$/src/LollipopGoFrame/main.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/XModule/static.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/XModule/dynamic.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/Gobal/root.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/Global/root.go" />
         <option value="$PROJECT_DIR$/src/LollipopGoFrame/Application/STdata.go" />
+        <option value="$PROJECT_DIR$/src/xcode/XModule/dynamic.go" />
+        <option value="$PROJECT_DIR$/src/xcode/XModule/static.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/Class1/main.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/main.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/Class1/Go语言环境安装" />
+        <option value="$PROJECT_DIR$/src/ClassCode/Class2/课程说明" />
+        <option value="$PROJECT_DIR$/src/xcode/xflock/flock.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/gateway/main.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/gateway/settiltle.go" />
+        <option value="$PROJECT_DIR$/src/xcode/xutil/xutil.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/main.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoFrame/settiltle.go" />
+        <option value="$PROJECT_DIR$/src/xcode/xutil/flock.go" />
+        <option value="$PROJECT_DIR$/LollipopGo.json" />
+        <option value="$PROJECT_DIR$/src/xcode/xPhysX/PhysX.go" />
+        <option value="$PROJECT_DIR$/src/xcode/xnet/websocket.go" />
+        <option value="$PROJECT_DIR$/src/github.com/name5566/leaf/network/json/json.go" />
+        <option value="$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGo/game/internal/handler.go" />
+        <option value="$PROJECT_DIR$/src/github.com/name5566/leaf/gate/agent.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGo/msg/msg.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/Class2/main.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/CLass3/课程说明" />
+        <option value="$PROJECT_DIR$/src/ClassCode/Class4/main.go" />
+        <option value="$PROJECT_DIR$/src/ClassCode/CLass3/class3.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGoGS/LollipopGOmain.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGOmain.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoGRPC/db_mysql/init_mssql.go" />
+        <option value="$PROJECT_DIR$/src/LollipopGoGRPC/db_mysql/init.go" />
       </list>
     </option>
   </component>
@@ -123,7 +104,20 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/cli/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/aspromise/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/base64/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/codegen/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/eventemitter/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/fetch/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/float/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/inquire/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/path/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/pool/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/lib/utf8/package.json" />
+      <path value="$PROJECT_DIR$/src/H5_pb/protobuf.js-master/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2300" />
@@ -160,14 +154,36 @@
               <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
               <item name="leafltd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LollipopGoFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="H5_pb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
               <item name="leafltd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LollipopGoFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="H5_pb" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf.js-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leafltd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leafltd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xcode" type="462c0819:PsiDirectoryNode" />
+              <item name="xPhysX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="leafltd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.7beta1" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -186,16 +202,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\gocode\code\leafltd\src\xcode\xutil" />
+      <recent name="F:\gocode\code\leafltd\src\ClassCode\Class1" />
+      <recent name="F:\gocode\code\leafltd\src\LollipopGoFrame\gateway" />
       <recent name="F:\gocode\code\leafltd\bin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\gocode\code\leafltd" />
-      <recent name="F:\gocode\code\leafltd\pkg" />
-      <recent name="F:\gocode\code\leafltd\src\LollipopGo" />
+      <recent name="F:\gocode\code\leafltd\src\github.com" />
+      <recent name="F:\gocode\code\leafltd\src" />
+      <recent name="F:\gocode\code\leafltd\src\LollipopGoGRPC" />
+      <recent name="F:\gocode\code\leafltd\src\xcode\xGitHub" />
+      <recent name="F:\gocode\code\leafltd\src\LollipopGoFrame" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -210,14 +231,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build LollipopGo/">
-    <configuration name="go build LollipopGoTest/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build LollipopGoGRPC">
+    <configuration name="go build ClassCode/Class2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leafltd" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
+      <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/" />
-      <directory value="$PROJECT_DIR$/src/LollipopGoTest" />
+      <package value="ClassCode/Class2" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build LollipopGoFrame" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leafltd" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="LollipopGoFrame" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build LollipopGoGRPC" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leafltd" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="LollipopGoGRPC" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build LollipopGoGRPC/LollipopGoGS" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leafltd" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="LollipopGoGRPC/LollipopGoGS" />
+      <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build LollipopGo/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leafltd" />
@@ -227,34 +276,20 @@
       <filePath value="$PROJECT_DIR$/" />
       <directory value="$PROJECT_DIR$/src/LollipopGo" />
     </configuration>
-    <configuration name="go build TCP_Client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="leafltd" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/" />
-      <package value="TCP_Client" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="leafltd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="leafltd" />
-      <working_directory value="F:\gocode\code" />
-      <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
-      <filePath value="$PROJECT_DIR$/" />
-    </configuration>
     <list>
-      <item itemvalue="Go Build.leafltd" />
       <item itemvalue="Go Build.go build LollipopGo/" />
-      <item itemvalue="Go Build.go build LollipopGoTest/" />
-      <item itemvalue="Go Build.go build TCP_Client" />
+      <item itemvalue="Go Build.go build LollipopGoFrame" />
+      <item itemvalue="Go Build.go build ClassCode/Class2" />
+      <item itemvalue="Go Build.go build LollipopGoGRPC/LollipopGoGS" />
+      <item itemvalue="Go Build.go build LollipopGoGRPC" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build LollipopGoGRPC" />
+        <item itemvalue="Go Build.go build LollipopGoGRPC/LollipopGoGS" />
+        <item itemvalue="Go Build.go build ClassCode/Class2" />
         <item itemvalue="Go Build.go build LollipopGo/" />
-        <item itemvalue="Go Build.leafltd" />
-        <item itemvalue="Go Build.go build TCP_Client" />
-        <item itemvalue="Go Build.go build LollipopGoTest/" />
+        <item itemvalue="Go Build.go build LollipopGoFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -268,11 +303,11 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3567788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4418079" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35474005" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -290,339 +325,350 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/xcode/xutil/xutil.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/conf/server.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/leaf.go">
+    <entry file="file://$PROJECT_DIR$/src/xcode/xGitHub/github.com/pkg/errors/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="186">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/main.go">
+    <entry file="file://C:/Go/src/syscall/zsyscall_windows.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="193">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go">
+    <entry file="file://C:/Go/src/reflect/value.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="349">
+          <caret line="174" column="13" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/example_test.go">
+    <entry file="file://C:/Go/src/reflect/type.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/waitgroup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/cond.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/external.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/internal/module.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/H5_Client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="87" column="63" lean-forward="true" selection-start-line="87" selection-start-column="63" selection-end-line="87" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGoKCP/LollipopGoServer/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4674" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/internal/module.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/external.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGoTest/tmian.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/cond.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/example_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/conf/server.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkg/server.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/server.json" />
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/version.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/waitgroup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/leaf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TCP_Client/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="544" column="1" lean-forward="true" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/conf/server.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/conf/json.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FenDZ/go-concurrentMap-master/concurrentmap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="659" column="9" lean-forward="true" selection-start-line="659" selection-start-column="9" selection-end-line="659" selection-end-column="9" />
+        <state relative-caret-position="341">
+          <caret line="277" column="18" lean-forward="true" selection-start-line="277" selection-start-column="18" selection-end-line="277" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/network/processor.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="248">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/network/json/json.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/network/protobuf/protobuf.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="27" />
+        <state relative-caret-position="558">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/chanrpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/module.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/base/skeleton.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/external.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/module.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/chanrpc.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/msg/msg.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#13#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="155">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/router.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="155">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/login/internal/handler.go">
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/msg/protocolfile/protocol.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="156">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/network/json/json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/chanrpc/chanrpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/module/skeleton.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+        <state relative-caret-position="348">
+          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/login/external.go">
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/login/internal/handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/msg/msg.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/name5566/leaf/gate/agent.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/internal/module.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/login/internal/module.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/gate/external.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGo/game/internal/handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoTest/tmian.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#15#54#0" expanded="true" />
-          </folding>
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGo/main.go">
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/Class2/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#300#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/Class2/课程说明">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/CLass3/课程说明">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/Class4/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassCode/CLass3/class3.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-341">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/syscall/syscall_windows.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/syscall/syscall.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/syscall/dll_windows.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xcode/XModule/dynamic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/runtime2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="294" column="10" selection-start-line="294" selection-start-column="5" selection-end-line="294" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/stubs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2984">
+          <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="2913" column="13" selection-start-line="2913" selection-start-column="13" selection-end-line="2913" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/settiltle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="403">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGoGS/README/TMP.TXT">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/google.golang.org/grpc/tap/tap.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGoGS/LollipopGOmain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGoGS/db_mysql/init.go" />
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/README/TMP.TXT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/db_mysql/init_mssql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1820">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/protobuf/proto/lib.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/google.golang.org/genproto/googleapis/rpc/status/status.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/db_mysql/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
-            <element signature="e#14#53#0" expanded="true" />
+            <element signature="e#14#127#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LollipopGoFrame/Application/STdata.go">
+    <entry file="file://$PROJECT_DIR$/src/LollipopGoGRPC/LollipopGOmain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#21#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-22">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/H5_pb/protobuf.js-master/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xcode/xPhysX/PhysX.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
