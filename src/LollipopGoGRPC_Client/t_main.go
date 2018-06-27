@@ -1,16 +1,9 @@
 package main
 
 import (
-	//"log"
-	//	"net"
 	"fmt"
 	"FenDZ/glog-master"
 	"net/http"
-
-	//	"golang.org/x/net/context"
-	//	"google.golang.org/grpc"
-	//	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	//	"google.golang.org/grpc/reflection"
 )
 
 // 接受数据处理
