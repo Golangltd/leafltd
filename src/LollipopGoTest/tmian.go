@@ -1,19 +1,28 @@
 package main
 
-import (
-	"fmt
+import "xcode/XModule"
+
+var TestDModule  XModule.DModule
+
+const (
+	ECS_INIT =iota
 )
 
-var Gmap map[string]string
+type II interface {
+	Run()bool
+} 
 
-func init() {
-	Gmap = make(map[string]string)
-for i:=0;;i++{
-	go func() {
-		Gmap["www.Golang.ltd"] = "www.Golang.ltd"
-	}
-}
+type Golang struct {
+	UID II
 }
 
-func main() {
+type GGG struct {
+	ss int
+} 
+
+
+func (this* Golang)III() II {
+
+	return (this.UID).(GGG)
+
 }

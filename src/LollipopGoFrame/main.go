@@ -4,6 +4,8 @@ import (
 	"FenDZ/glog-master"
 	"xcode/xutil"
 	"fmt"
+	"LollipopGoFrame/root"
+	"LollipopGoFrame/Logic/player"
 )
 
 var FPS  = 20
@@ -22,4 +24,6 @@ func main()  {
 
 func Twst(i int64)  {
    fmt.Println("---- 帧同步服务器 -----",i)
+   // 执行 Run()函数
+	player.NewPlayer().Run(root.DLollipopGoPlayer)
 }

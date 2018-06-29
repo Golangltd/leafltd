@@ -4,6 +4,9 @@ import (
 	"time"
 	"strconv"
 	"FenDZ/glog-master"
+	"LollipopGoFrame/root"
+	"LollipopGoFrame/Logic/player"
+	"xcode/XModule"
 )
 
 // 版本
@@ -33,6 +36,8 @@ type Application struct {
 
 func (this *Application)Init()bool{
 	NewFolck(this.pidFile)
+	data:= XModule.NewDmodule(2)
+	data.Register(root.DLollipopGoPlayer,player.NewPlayer())
 	return true
 }
 
