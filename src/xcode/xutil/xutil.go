@@ -47,10 +47,9 @@ type Application struct {
 	invokeFunc     func()
 }
 
-func (this *Application)Init()bool{
-	// NewFolck(this.pidFile)
-	data:= XModule.NewDmodule(2)
-	data.Register(root.DLollipopGoPlayer,player.NewPlayer())
+func (this *Application)Init(f func(int64))bool{
+	root.DModule= XModule.NewDmodule(root.DLollipopGoMAX)
+	root.DModule.Register(root.DLollipopGoPlayer,player.NewPlayer())
 	flock,err:=NewFolck(this.pidFile)
 	if err!=nil{
 		glog.Info(err,flock)

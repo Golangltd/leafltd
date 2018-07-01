@@ -6,10 +6,11 @@ import "xcode/XModule"
 const (
 	DLollipopGoInIt = iota
 	DLollipopGoPlayer
+	DLollipopGoMAX
 )
 
 var(
-	DModule *XModule.DModuleMgr
+	DModule XModule.DModuleMgr
 )
 
 //SMoudle
