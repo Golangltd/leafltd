@@ -12,7 +12,7 @@ var FPS  = 20
 func main()  {
 	glog.Info("Fream Server data!!!")
 	app:=xutil.GApp
-	app.SetFps(FPS).SetPidFile("LollipopGo.json").SetVersion(1,0,1)
+	app.SetFps(FPS).SetPidFile("LollipopGo.pid").SetVersion(1,0,1)
 	if !app.Init(doInitModule){
 		return
 	}

@@ -109,6 +109,16 @@ mainLoop:
 			}
 			lasttime = nowtime
 			this.tickTotal++
+		//case cmd := <-this.http2main:
+		//	ret := cmd.cmdFunc(cmd.args)
+		//	select {
+		//	case this.main2http <- ret:
+		//	default:
+		//	}
+		case <-this.invokeOnMain: // 网路事件处理 ，事件驱动处理  ； 0-50ms 数据处理
+			if this.invokeFunc != nil {
+				this.invokeFunc()
+			}
 		}
 	}
 }
