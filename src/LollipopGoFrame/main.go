@@ -17,12 +17,14 @@ func main()  {
 		return
 	}
 	setConsoleTitle()
-	app.Run(Twst)
+	app.Run(doInit)
 	app.Distroy()
 }
 
-func Twst(i int64)  {
+func doInit(i int64)  {
    fmt.Println("---- 帧同步服务器 -----",i)
+  // root.DModule.RunAll(i)
    // 执行 Run()函数
    root.DModule.Run(root.DLollipopGoPlayer,i)
 }
+

@@ -7,6 +7,8 @@ import (
 	"LollipopGoFrame/root"
 	"LollipopGoFrame/Logic/player"
 	"xcode/XModule"
+	"net/http"
+	"xcode/xprofile"
 )
 
 // 版本
@@ -26,18 +28,34 @@ type App interface {
 
 // 实现接口的结构
 type Application struct {
-	fps int
-	exit bool
-	pidFile string
-	tickTotal int64
-	FeameTime time.Duration
-	FeameTimeTotal time.Duration
+	exit           bool
+	fps            int
+	tickTotal      int64
+	FrameTime      time.Duration
+	FrameTimeTotal time.Duration
+	pidFile        string
+	profile        *xprofile.Profiler
+	httpAddr       string
+	httpPort       int
+	serveMux       *http.ServeMux
+	//pattern        *pat.PatternServeMux
+	//http2main      chan *httpCmd
+	main2http      chan string
+	httpCmds       []string
+	InitOKTime     time.Time // 初始化完成计时
+	invokeOnMain   chan struct{}
+	invokeFunc     func()
 }
 
 func (this *Application)Init()bool{
-	NewFolck(this.pidFile)
+	// NewFolck(this.pidFile)
 	data:= XModule.NewDmodule(2)
 	data.Register(root.DLollipopGoPlayer,player.NewPlayer())
+	flock,err:=NewFolck(this.pidFile)
+	if err!=nil{
+		glog.Info(err,flock)
+	}
+	this.profile.Start(this.pidFile)
 	return true
 }
 
@@ -85,9 +103,9 @@ mainLoop:
 			nowtime=time.Now().UnixNano()
 			dt:=nowtime -lasttime
 			f(dt)
-			this.FeameTime = time.Duration(time.Now().UnixNano()-nowtime)
-			this.FeameTimeTotal+=this.FeameTime
-			if this.FeameTime >t && nowtime/int64(time.Millisecond)%1000<=50{
+			this.FrameTime = time.Duration(time.Now().UnixNano()-nowtime)
+			this.FrameTimeTotal+=this.FrameTime
+			if this.FrameTime >t && nowtime/int64(time.Millisecond)%1000<=50{
 				glog.Warning(" FPS 高于 50 ")
 			}
 			lasttime = nowtime
