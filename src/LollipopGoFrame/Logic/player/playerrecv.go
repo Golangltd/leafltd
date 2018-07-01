@@ -22,6 +22,8 @@ func (this *StPlayer)Init(i XModule.DModuleGetter)bool  {
 
 func (this *StPlayer)Run(i int64)  {
 	fmt.Println("---- StPlayer -----",i)
+	// 接受网络处理
+	// 根据具体内容经行分发处理
 }
 
 func (this *StPlayer)Destroy()  {
