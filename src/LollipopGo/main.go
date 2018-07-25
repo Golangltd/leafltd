@@ -7,10 +7,10 @@ import (
 	"LollipopGo/game"
 	"LollipopGo/gate"
 	"LollipopGo/global"
-	"LollipopGo/login"
 	"flag"
 	_ "time"
 
+	"LollipopGo/login"
 	_ "github.com/dop251/goja" // JS 解析器
 	"github.com/name5566/leaf"
 	lconf "github.com/name5566/leaf/conf"
@@ -38,12 +38,10 @@ func main() {
 	lconf.ConsolePort = conf.Server.ConsolePort
 	lconf.ProfilePath = conf.Server.ProfilePath
 
-	// 注册模块
-	// 为什么要开始的时候注册全部模块？
 	leaf.Run(
 		game.Module,
-		gate.Module, // conf是配置网关的：8888端口
+		gate.Module,
 		login.Module,
 	)
-	
+
 }

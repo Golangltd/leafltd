@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/name5566/leaf/conf"
-	"github.com/name5566/leaf/log"
+	"github.com/LollipopGo/lollipopgo/conf"
+	"github.com/LollipopGo/lollipopgo/log"
 )
 
 // one server per goroutine (goroutine not safe)

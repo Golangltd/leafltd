@@ -41,7 +41,7 @@ func TJWanJiaData(w http.ResponseWriter, req *http.Request) {
 
 // 主函数
 func main() {
-	http.HandleFunc("/TJData", TJWanJiaData) // 获取统计
+	http.HandleFunc("/TJData", TJWanJiaData)
 	//err := http.ListenAndServe(":7878", nil)
 	err := http.ListenAndServeTLS(":7878", "cert.pem", "key.pem", nil)
 	if err != nil {
