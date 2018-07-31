@@ -38,7 +38,7 @@ func main() {
 	lconf.ConsolePort = conf.Server.ConsolePort
 	lconf.ProfilePath = conf.Server.ProfilePath
 
-	leaf.Run(
+	lollipopgo.Run(
 		game.Module,
 		gate.Module,
 		login.Module,
