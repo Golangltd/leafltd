@@ -1,6 +1,19 @@
 # leafltd
-<div class="output_wrapper" id="output_wrapper_id" style="font-size: 16px; color: rgb(62, 62, 62); line-height: 1.6; word-spacing: 0px; letter-spacing: 0px; font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><blockquote style="line-height: inherit; display: block; padding: 15px 15px 15px 1rem; font-size: 0.9em; margin: 1em 0px; color: rgb(129, 145, 152); border-left: 6px solid rgb(220, 230, 240); background: rgb(242, 247, 251); overflow: auto; word-wrap: normal; word-break: normal;">
-  <p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 0px;">社区订阅号：Golang语言社区<br>社区服务号：Golang技术社区<br>社区交流群：221273219</p>
-</blockquote>
-<h3 id="hleafltd" style="line-height: inherit; margin: 1.5em 0px; font-weight: bold; font-size: 1.3em; margin-bottom: 2em; margin-right: 5px; padding: 8px 15px; letter-spacing: 2px; background-image: linear-gradient(to right bottom, rgb(0, 188, 212), rgb(63, 81, 181)); background-color: rgb(63, 81, 181); color: rgb(255, 255, 255); border-left: 10px solid rgb(51, 51, 51); border-radius: 5px; text-shadow: rgb(102, 102, 102) 1px 1px 1px; box-shadow: rgb(102, 102, 102) 1px 1px 2px;"><span style="font-size: inherit; color: inherit; line-height: inherit; margin: 0px; padding: 0px;">Leafltd 简介</span></h3>
-<p style="font-size: inherit; color: inherit; line-height: inherit; padding: 0px; margin: 1.5em 0px;">leafltd是leaf开源游戏服务器的社区版本，做了横向拓展（加入redis,mysql）,后面在持续更新。</p></div>
+字节教育 授权Golang语言社区开设的社区项目托管，主要是社区的开源项目及预更新的数据的内容等；同时字节教育也开始了共开课的网络授课。
+>微信订阅号：Golang语言社区。<Br/>
+>微信服务号：Golang技术社区。<Br/>
+>关注可了解更多的Go语言技术教程及课程活动。问题或建议，请公众号留言;<Br/>
+
+课程说明
+=============
+
+<ol>
+<li>面向零基础学员，希望更多喜欢Go语言的同学及想从事Go语言开发游戏服务器的同学一个方向的指引</li>
+<li>课程多维度教学，基础课程，进阶课程，提高课程，lollipopGo游戏框架实战课程等等</li>
+<li>同时我们的免费课程也在持续更新中; 点击访问：<a href="http://gopher.ke.qq.com" title="Title">腾讯课堂</a></li>
+</ol>
+<img src="src/LollipopGo/readme/xuanc.png"/>
+
+ <div class="footer">
+        &copy; 成都字节跳动教育咨询有限公司(www.ByteEdu.Com)
+ </div>
