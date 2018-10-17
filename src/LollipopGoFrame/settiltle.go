@@ -1,15 +1,16 @@
 package main
 
 import (
+	"runtime"
 	"syscall"
 	"unsafe"
-	"runtime"
 )
 
 func lockOsThread() {
 	runtime.LockOSThread()
 }
 
+// 设置标题
 func setConsoleTitle() {
 	kernel32, err := syscall.LoadLibrary("Kernel32.dll")
 	defer syscall.FreeLibrary(kernel32)
@@ -27,6 +28,5 @@ func setConsoleTitle() {
 	if e != nil {
 		return
 	}
-
 	_, _, _ = syscall.Syscall(uintptr(setConsole), 1, uintptr(unsafe.Pointer(ptr)), 0, 0)
 }

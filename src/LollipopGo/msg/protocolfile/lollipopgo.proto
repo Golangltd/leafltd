@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package golang.ltd;
 
-
 message Person {
 
     string name = 1;
@@ -30,6 +29,13 @@ message AddressBook {
 
     repeated Person people = 1;
 
+}
+
+// 刷新操作 
+message SearchRequest {
+    string query = 1;           // 查询字符串
+    int32  page_number = 2;     // 页码
+    int32  result_per_page = 3; // 每页条数
 }
 
 service AddressBookOperation {
