@@ -15,6 +15,8 @@ import (
 
 	"golang.org/x/crypto/pbkdf2"
 
+	"path/filepath"
+
 	"github.com/golang/snappy"
 	"github.com/urfave/cli"
 	kcp "github.com/xtaci/kcp-go"
@@ -95,10 +97,12 @@ func handleClient(p1, p2 io.ReadWriteCloser, quiet bool) {
 
 	// start tunnel
 	p1die := make(chan struct{})
-	go func() { io.Copy(p1, p2); close(p1die) }()
+	buf1 := make([]byte, 65535)
+	go func() { io.CopyBuffer(p1, p2, buf1); close(p1die) }()
 
 	p2die := make(chan struct{})
-	go func() { io.Copy(p2, p1); close(p2die) }()
+	buf2 := make([]byte, 65535)
+	go func() { io.CopyBuffer(p2, p1, buf2); close(p2die) }()
 
 	// wait for tunnel termination
 	select {
@@ -211,14 +215,14 @@ func main() {
 			Hidden: true,
 		},
 		cli.IntFlag{
-			Name:   "sockbuf",
-			Value:  4194304, // socket buffer size in bytes
-			Hidden: true,
+			Name:  "sockbuf",
+			Value: 4194304, // socket buffer size in bytes
+			Usage: "per-socket buffer in bytes",
 		},
 		cli.IntFlag{
-			Name:   "keepalive",
-			Value:  10, // nat keepalive interval in seconds
-			Hidden: true,
+			Name:  "keepalive",
+			Value: 10, // nat keepalive interval in seconds
+			Usage: "seconds between heartbeats",
 		},
 		cli.StringFlag{
 			Name:  "snmplog",
@@ -302,6 +306,7 @@ func main() {
 		}
 
 		log.Println("version:", VERSION)
+		log.Println("initiating key derivation")
 		pass := pbkdf2.Key([]byte(config.Key), []byte(SALT), 4096, 32, sha1.New)
 		var block kcp.BlockCrypt
 		switch config.Crypt {
@@ -372,7 +377,7 @@ func main() {
 			if conn, err := lis.AcceptKCP(); err == nil {
 				log.Println("remote address:", conn.RemoteAddr())
 				conn.SetStreamMode(true)
-				conn.SetWriteDelay(true)
+				conn.SetWriteDelay(false)
 				conn.SetNoDelay(config.NoDelay, config.Interval, config.Resend, config.NoCongestion)
 				conn.SetMtu(config.MTU)
 				conn.SetWindowSize(config.SndWnd, config.RcvWnd)
@@ -400,7 +405,10 @@ func snmpLogger(path string, interval int) {
 	for {
 		select {
 		case <-ticker.C:
-			f, err := os.OpenFile(time.Now().Format(path), os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+			// split path into dirname and filename
+			logdir, logfile := filepath.Split(path)
+			// only format logfile
+			f, err := os.OpenFile(logdir+time.Now().Format(logfile), os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 			if err != nil {
 				log.Println(err)
 				return
