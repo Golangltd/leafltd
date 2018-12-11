@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"FenDZ/glog-master"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -22,6 +22,7 @@ const (
 // 问答或则吐槽
 func WenDaOrTuCao(strnickName, stravatarUrl, strdata string, w http.ResponseWriter) {
 	glog.Info("strnickName, stravatarUrl, strparam", strnickName, stravatarUrl, strdata)
+	// 发送数据奥做
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)

@@ -40,6 +40,7 @@ func handleTest(args []interface{}) {
 		LoginName: "client",
 		LoginPW:   "golang.ltd",
 	}
+
 	// a.PlaySendMessage(dd)
 	a.WriteMsg(dd)
 	//gamedata.Init1()
