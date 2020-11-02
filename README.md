@@ -15,5 +15,5 @@
 <img src="https://github.com/Golangltd/codeclass/blob/master/%E7%AC%AC%E4%B8%80%E5%AD%A3%20Go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E3%80%81%E8%BF%9B%E9%98%B6%E3%80%81%E6%8F%90%E9%AB%98%E8%AF%BE%E7%A8%8B/pic/xuanc.png"/>
 
  <div class="footer">
-        &copy; 成都字节跳动教育咨询有限公司(www.ByteEdu.Com)
+        &copy; 贝游特教育(www.ByteEdu.Com)
  </div>
